@@ -1,10 +1,6 @@
 # ReadMe-Creation
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-<br>
-
-This professional ReadMe creator will organize and create a simple ReadMe.MD and save a lot of time and effort!
+### This professional ReadMe creator will organize and create a simple ReadMe.MD and save a lot of time and effort!
 
 <br>
 
@@ -37,14 +33,14 @@ This professional ReadMe creator will organize and create a simple ReadMe.MD and
 <br>
 
 ## Usage
-User will be prompted with series of questions and choices. Answer as detailed as possible for a better description of your project. The installation guide will follow a description:code and separated by commas. Terminal in vscode does not appreciate long paragraphs but it will function properly. Screenshots links must be put in manually after the ReadMe.MD creation.
+User will be prompted with series of questions and choices. Answer as detailed as possible for a better description of your project. The installation guide will follow a description:code and separated by commas. Terminal in VS-Code does not appreciate long paragraphs, but it will function properly. Deployed links must inserted manually along side contributors github links.
 
 <br>
 
 
 ## Screenshot/Video
 
-- [alt 1](./assets/front.png)
+[IMAGE 1](./assets/front.png)
 
 
 <br>
@@ -68,7 +64,9 @@ Third-party applications used to create this project:
 <br>
 
 ## License
-This project is licensed under the MIT.
+*This project is licensed under the MIT.*
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <br>
 

@@ -42,18 +42,16 @@ ${data.environmentTesting}
 ## Screenshot/Video
 
 ${data.screenshots
-      .map((screenshot, index) => `- [alt ${index + 1}](${screenshot})`)
+      .map((screenshot, index) => `[IMAGE ${index + 1}](${screenshot})`)
       .join('\n')}
 `;
   }
 
   return `# ${data.title}
 
-${licenseBadge}
-
 <br>
 
-${data.description}
+### ${data.description}
 
 <br>
 
@@ -94,18 +92,18 @@ ${screenshotsSection}
 <br>
 
 ## Deployed Application
-
+- [DeployedAPP](#)
 
 <br>
 
 ## Contributing
-A list of contributors on this project includes:
+*A list of contributors on this project includes:*
 
-${data.contributors.map((contributor) => `* ${contributor}`).join('\n')}
+${data.contributors.map((contributor) => `* [${contributor}](#github)`).join('\n')}
 
 <br>
 
-Third-party applications used to create this project:
+*Third-party applications used to create this project:*
 ${data.thirdPartyApps
     .map((app) => `* [${app.name}](#${app.name.toLowerCase().replace(/ /g, '-')})`)
     .join('\n')}
@@ -113,7 +111,9 @@ ${data.thirdPartyApps
 <br>
 
 ## License
-This project is licensed under the ${data.license}.
+*This project is licensed under the ${data.license}.*
+
+${licenseBadge}
 
 <br>
 
