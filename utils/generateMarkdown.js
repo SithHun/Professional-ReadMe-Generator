@@ -104,7 +104,7 @@ Feel free to contact me via email: ${data.email}
 
 <br>
 
-> *Credits: This ReadMe was created by [Professional-ReadMe-Generator](https://github.com/SithHun/Professional-ReadMe-Generator)*
+> *Credits: This ReadMe was created with ❤️ by [Professional-ReadMe-Generator](https://github.com/SithHun/Professional-ReadMe-Generator)*
 `;
 }
 
