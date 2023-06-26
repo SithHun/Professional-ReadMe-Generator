@@ -50,7 +50,7 @@ ${data.screenshots
   return `# ${data.title}
   ${licenseBadge}
 
-### ${data.description}
+${data.description}
 
 ## Description
 ${data.descriptionitems.map((item) => `* ${item}`).join('\n')}
