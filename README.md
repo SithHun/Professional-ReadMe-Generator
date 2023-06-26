@@ -1,30 +1,73 @@
-# ReadMe Creation
+# Test
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+readme professiona creator
+
+## Description
+* for some reason
+* this isn't working properly
+* man this sucks
+
+<br>
 
 ## Table of Contents
-- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+
+- [Screenshot/Video](#screenshotvideo)
+- [Deployed APP](#deployed-application)
+- [Contributing](#contributing)
 - [License](#license)
 - [Questions](#questions)
 
-## Description
-* Create a quality Readme using Node.JS
-* Use Node.JS to write and create a ReadMe.MD file
-* Able to overwrite files and change ReadME
-* Save time with filling out prompts
+<br>
 
 ## Installation
-* Run command-line and npm install
+* _run in terminal_:
+> undefined
+
+<br>
 
 ## Usage
-* Fill out description when prompted
+Sure
+
+
+## Screenshot/Video
+
+1. [Screenshot/Video 1]()
+
+
+<br>
+
+## Deployed Application
+
+
+<br>
+
+## Contributing
+A list of contributors on this project includes:
+
+* Sith Hun
+* Someone Something
+* Test Test
+
+<br>
+
+Third-party applications used to create this project:
+* [Inquirer](#inquirer)
+* [NodeJS](#nodejs)
+
+<br>
 
 ## License
+This project is licensed under the MIT.
 
-* This application is covered under the MIT license.
+
+
+<br>
 
 ## Questions
-If you have any questions, you can reach out to me via GitHub: [@SithHun](https://github.com/SithHun)
+If you have any questions, you can reach out to me via GitHub: [@sithhun](sithhun.com)
 
-## Video Walk Through
-[Video Link](https://drive.google.com/file/d/1ungmXh9PdI6ZX4_M6eOlFi0qRalDQB9z/view)
+Feel free to contact me via email: sithhun@email.com

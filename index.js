@@ -1,59 +1,65 @@
-// // TODO: Include packages needed for this application
-
-// // TODO: Create an array of questions for user input
-// const questions = [];
-
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
-
-
-const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown');
+const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown')
 
-// Array of questions for user input
 const questions = [
   {
     type: 'input',
     name: 'title',
-    message: 'Enter the project title:',
+    message: 'Enter the title of your project:',
   },
   {
     type: 'input',
     name: 'description',
-    message: 'Enter the project description:',
+    message: 'Enter a description about the project:',
   },
   {
     type: 'input',
-    name: 'installation',
-    message: 'Enter installation instructions:',
+    name: 'descriptionitems',
+    message: 'Enter description items (separated by commas for bullet points):',
+    filter: (value) => value.split(',').map((item) => item.trim()),
   },
   {
     type: 'input',
-    name: 'usage',
-    message: 'Enter usage information:',
+    name: 'installationItems',
+    message: 'Enter installation items (description: code, separated by commas for next line):',
+    filter: (value) => {
+      const items = value.split(',');
+      return items.map((item) => {
+        const [description, code] = item.split(':').map((part) => part.trim());
+        return { description, code };
+      });
+    },
   },
   {
     type: 'input',
-    name: 'contributing',
-    message: 'Enter contribution guidelines:',
+    name: 'usageItems',
+    message: 'Enter usage (will be a paragraph):',
+    filter: (value) => value.split(',').map((item) => item.trim()),
   },
   {
     type: 'input',
-    name: 'tests',
-    message: 'Enter test instructions:',
+    name: 'screenshots',
+    message: 'Enter the screenshot links or video URL (separated by commas):',
+    filter: (value) => value.split(',').map((item) => item.trim()),
+  },
+  {
+    type: 'input',
+    name: 'contributors',
+    message: 'Enter contributors (separated by commas for bullet points):',
+    filter: (value) => value.split(',').map((item) => item.trim()),
+  },
+  {
+    type: 'input',
+    name: 'thirdPartyApps',
+    message: 'Enter third-party application names (separated by commas for bullet points):',
+    filter: (value) => value.split(',').map((item) => ({ name: item.trim() })),
   },
   {
     type: 'list',
     name: 'license',
-    message: 'Choose a license for your application:',
-    choices: ['MIT', 'Apache-2.0', 'GPL-3.0'],
+    message: 'Choose a license for your project:',
+    choices: ['MIT', 'Apache 2.0', 'None'],
   },
   {
     type: 'input',
@@ -62,31 +68,36 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'emailAddress',
+    name: 'githubLink',
+    message: 'Enter the link to your GitHub profile:',
+  },
+  {
+    type: 'input',
+    name: 'email',
     message: 'Enter your email address:',
   },
 ];
 
-// Function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     if (err) {
-      console.error('Error generating README file:', err);
+      console.error(err);
     } else {
-      console.log('README.md file generated successfully.');
+      console.log(`README file '${fileName}' has been generated successfully.`);
     }
   });
 }
 
-// Function to initialize app
 function init() {
-  inquirer.prompt(questions).then((answers) => {
-    // Generate the README content
-    const readmeContent = generateMarkdown(answers);
-
-    // Save the README file
-    writeToFile('README.md', readmeContent);
-  });
+  inquirer
+    .prompt(questions)
+    .then((answers) => {
+      const markdown = generateMarkdown(answers);
+      writeToFile('README.md', markdown);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
 }
 
 // Function call to initialize app
