@@ -1,4 +1,4 @@
-# ReadMe-Creation
+# Professional-ReadMe-Generator
 
 This professional ReadMe creator will organize and create a simple ReadMe.MD and save a lot of time and effort!
 
