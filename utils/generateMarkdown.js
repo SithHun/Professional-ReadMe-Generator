@@ -79,6 +79,8 @@ ${data.usageItems.join(' ')}
 ${screenshotsSection}
 
 ## Deployed Application
+*A list of links of deployed applications:*
+
 - [DeployedAPP](#)
 
 ## Contributing
