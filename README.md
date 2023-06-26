@@ -1,4 +1,7 @@
-# Professional-ReadMe-Generator
+# Professional-ReadMe-Generator 
+![javascript](https://img.shields.io/badge/languages-javascript-blue) ![inquirer](https://img.shields.io/badge/packages-inquirer-purple) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+<br>
 
 This professional ReadMe creator will organize and create a simple ReadMe.MD and save a lot of time and effort!
 
@@ -66,8 +69,6 @@ User will be prompted with series of questions and choices. Answer as detailed a
 ## License
 *This project is licensed under the MIT.*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 <br>
 
 ## Questions
@@ -77,4 +78,4 @@ Feel free to contact me via email: sithsun@gmail.com
 
 <br>
 
-> *Credits: This ReadMe was created by [Professional-ReadMe-Generator](https://github.com/SithHun/Professional-ReadMe-Generator)*
+> *Credits: This ReadMe was created with ❤️ by [Professional-ReadMe-Generator](https://github.com/SithHun/Professional-ReadMe-Generator)*

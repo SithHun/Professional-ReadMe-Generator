@@ -48,6 +48,7 @@ ${data.screenshots
   }
 
   return `# ${data.title}
+  ${licenseBadge}
 
 <br>
 
@@ -112,8 +113,6 @@ ${data.thirdPartyApps
 
 ## License
 *This project is licensed under the ${data.license}.*
-
-${licenseBadge}
 
 <br>
 
