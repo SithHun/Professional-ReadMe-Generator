@@ -122,7 +122,12 @@ ${environmentTestingSection}
 ## Questions
 If you have any questions, you can reach out to me via GitHub: [@${data.githubUsername}](${data.githubLink})
 
-Feel free to contact me via email: ${data.email}`;
+Feel free to contact me via email: ${data.email}
+
+<br>
+
+> *Credits: This ReadMe was created by [Professional-ReadMe-Generator](https://github.com/SithHun/Professional-ReadMe-Generator)*
+`;
 }
 
 module.exports = generateMarkdown;

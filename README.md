@@ -51,13 +51,13 @@ User will be prompted with series of questions and choices. Answer as detailed a
 <br>
 
 ## Contributing
-A list of contributors on this project includes:
+*A list of contributors on this project includes:*
 
-* Sith Hun
+* [Sith Hun](https://github.com/SithHun)
 
 <br>
 
-Third-party applications used to create this project:
+*Third-party applications used to create this project:*
 * [Inquirer](#inquirer)
 * [NodeJS](#nodejs)
 
@@ -74,3 +74,7 @@ Third-party applications used to create this project:
 If you have any questions, you can reach out to me via GitHub: [@Sith Hun](https://github.com/SithHun)
 
 Feel free to contact me via email: sithsun@gmail.com
+
+<br>
+
+> *Credits: This ReadMe was created by [Professional-ReadMe-Generator](https://github.com/SithHun/Professional-ReadMe-Generator)*
