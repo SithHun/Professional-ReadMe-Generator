@@ -32,7 +32,7 @@ function generateMarkdown(data) {
 ${data.environmentTesting}
 
 <br>`;
-    tableOfContentsEntry = `- [Environment Testing](#environment-testing)\n`;
+    tableOfContentsEntry = `- [Environment Testing](#environment-testing)\n <br> `;
   }
 
   let screenshotsSection = '';
@@ -42,7 +42,7 @@ ${data.environmentTesting}
 ## Screenshot/Video
 
 ${data.screenshots
-      .map((screenshot, index) => `[IMAGE ${index + 1}](${screenshot})`)
+      .map((screenshot, index) => `![IMAGE ${index + 1}](${screenshot})`)
       .join('\n')}
 `;
   }
@@ -118,8 +118,6 @@ ${licenseBadge}
 <br>
 
 ${environmentTestingSection}
-
-<br>
 
 ## Questions
 If you have any questions, you can reach out to me via GitHub: [@${data.githubUsername}](${data.githubLink})

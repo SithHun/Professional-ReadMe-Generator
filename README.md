@@ -1,6 +1,6 @@
 # ReadMe-Creation
 
-### This professional ReadMe creator will organize and create a simple ReadMe.MD and save a lot of time and effort!
+This professional ReadMe creator will organize and create a simple ReadMe.MD and save a lot of time and effort!
 
 <br>
 
@@ -40,7 +40,7 @@ User will be prompted with series of questions and choices. Answer as detailed a
 
 ## Screenshot/Video
 
-[IMAGE 1](./assets/front.png)
+![IMAGE 1](./assets/front.jpg)
 
 
 <br>
@@ -67,10 +67,6 @@ Third-party applications used to create this project:
 *This project is licensed under the MIT.*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-<br>
-
-
 
 <br>
 
