@@ -32,7 +32,7 @@ function generateMarkdown(data) {
 ${data.environmentTesting}
 
 <br>`;
-    tableOfContentsEntry = `- [Environment Testing](#environment-testing)\n <br> `;
+    tableOfContentsEntry = `- [Environment Testing](#environment-testing)\n`;
   }
 
   let screenshotsSection = '';
@@ -50,16 +50,10 @@ ${data.screenshots
   return `# ${data.title}
   ${licenseBadge}
 
-<br>
-
 ### ${data.description}
-
-<br>
 
 ## Description
 ${data.descriptionitems.map((item) => `* ${item}`).join('\n')}
-
-<br>
 
 ## Table of Contents
 - [Installation](#installation)
@@ -71,8 +65,6 @@ ${tableOfContentsEntry}
 - [License](#license)
 - [Questions](#questions)
 
-<br>
-
 ## Installation
 ${data.installationItems
     .map(
@@ -81,40 +73,27 @@ ${data.installationItems
     )
     .join('\n\n')}
 
-<br>
-
 ## Usage
 ${data.usageItems.join(' ')}
 
-<br>
-
 ${screenshotsSection}
-
-<br>
 
 ## Deployed Application
 - [DeployedAPP](#)
-
-<br>
 
 ## Contributing
 *A list of contributors on this project includes:*
 
 ${data.contributors.map((contributor) => `* [${contributor}](#github)`).join('\n')}
 
-<br>
 
 *Third-party applications used to create this project:*
 ${data.thirdPartyApps
     .map((app) => `* [${app.name}](#${app.name.toLowerCase().replace(/ /g, '-')})`)
     .join('\n')}
 
-<br>
-
 ## License
 *This project is licensed under the ${data.license}.*
-
-<br>
 
 ${environmentTestingSection}
 
